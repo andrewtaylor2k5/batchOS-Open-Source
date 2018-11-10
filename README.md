@@ -21,3 +21,9 @@ The link takes you to the Python 3.7.0 Release Page
 <h2> Visual Basic Script Components </h2>
 
 The VBS Components are only used for displaying message boxes
+
+
+<h2> Concepts </h2>
+
+The Concepts Folder contains Concepts of modules that *might* get implemented
+in batchOS
