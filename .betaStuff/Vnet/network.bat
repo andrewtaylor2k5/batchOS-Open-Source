@@ -46,10 +46,9 @@ echo Setup Network
 echo.
 echo Steps
 echo 1] Loading and Copying Files
-echo 2] Adding Registry Components
-echo 3] Testing Components
-echo 4] Saving Setup Information
-echo 5] Generate Network Key
+echo 2] Testing Components
+echo 3] Saving Setup Information
+echo 4] Generate Network Key
 echo.
 echo    Step 1
 echo Loading Setup Files...
@@ -59,4 +58,37 @@ echo Copying files. . .
 echo.
 copy /y Files\*.* InstalledComponents\*.*
 echo.
-echo 
+echo.
+echo Step 1 Completed.
+echo.
+echo Step 2
+echo Testing Components
+echo.
+ping -n 4 127.0.0.0 > nul
+echo.
+echo Step 2 Completed.
+echo.
+echo Step 3
+echo Saving Setup Information
+echo.
+echo Setup Information >> setup.ini
+echo. >> setup.ini
+echo Setup Completed at %time% %date% >> setup.ini
+echo.
+echo Setup Information Saved.
+echo.
+echo Step 4
+echo Generate Network Key
+echo.
+echo Generating Network Key...
+echo.
+ping -n 3 127.0.0.0 > nul
+echo.
+echo. >> %random%.netkey
+echo.
+echo SETUP COMPLETED
+echo The network key is stored as a file with a
+echo random number file with the extention of
+echo .netkey
+echo.
+goto menu
