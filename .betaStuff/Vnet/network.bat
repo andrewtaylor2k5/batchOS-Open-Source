@@ -53,4 +53,10 @@ echo 5] Generate Network Key
 echo.
 echo    Step 1
 echo Loading Setup Files...
-pause>nul
+ping -n 6 127.0.0.0 > nul
+echo.
+echo Copying files. . .
+echo.
+copy /y Files\*.* InstalledComponents\*.*
+echo.
+echo 
