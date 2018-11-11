@@ -26,5 +26,7 @@ def terminal():
     print(randomnumber)
     print()
     terminal()
+  elif command==("$exit"):
+    exit()
   
 terminal()
